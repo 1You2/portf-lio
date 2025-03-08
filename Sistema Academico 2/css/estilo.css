@@ -1,0 +1,37 @@
+* {
+
+    margin: 3px 4px 2px 3px;
+
+}
+
+body{
+
+    background: #f8efba;
+}
+
+#banner{
+
+    width: 1000px;
+    height: "auto";
+    margin-bottom: 30px;
+    border-radius: 12px;
+}
+    h1{
+    background: green;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+
+}
+#bem_vindo{
+    font-family: Courier;
+    color: green;
+    font-size: 22px;
+
+}
+#nota, #frequencia, #conselho{
+    font-family: arial;
+    font-size: 17px;
+    color: red;
+
+}
