@@ -1,0 +1,146 @@
+*{
+    margin: 0 0 0 0;
+    padding: 0;
+
+}
+@font-face{
+    font-family: 'StretchPro';
+    src: url(/font/StretchPro.otf);
+}
+@font-face {
+   font-family: 'L-BoldeagueSpartanr';
+  src: url(../font/LeagueSpartan-Bold.otf);
+}
+body{
+   background-color: #b9b9b9;
+}
+.tela{
+   display: flex;
+   justify-content: center;
+   position: fixed;
+   width: auto;
+   height: auto;
+   border: 30px;
+}
+h1{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    background-color: #1C1C1C;
+    color: white;
+    text-align: center;
+    font-family: 'StretchPro';
+    font-size: 65px;
+    text-shadow:  0px 0px 10px rgb(255, 255, 255);
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    transition: transform 0.5s ease;
+ }
+ h1:hover{
+     transform: scale(1.05);
+ 
+ }
+ .fotos{
+    background-color: rgb(92, 92, 92);
+   
+    position: fixed;
+    top: 20%;
+    width: 95%;
+    height: 680px;
+    border-radius: 30px;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    box-shadow: 0 0 30px;
+    transition: box-shadow 0.5s ease;
+
+ }
+ .fotos:hover{
+
+   box-shadow: 0px 0px 80px black;
+ }
+ .puma180{
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+
+ }
+ .tenis{
+    height: 350px;
+    width: auto;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    
+ }
+ .tenis:hover{
+    transform: scale(0.98);
+   
+ }
+ .nome{
+   font-family: 'StretchPro';
+   font-size: 35px;
+   text-align: center;
+   color: white;
+   text-shadow:  0px 0px 10px rgb(255, 255, 255);
+
+}
+.ttenis{
+   font-family: 'StretchPro';
+    font-size: 35px;
+    left: 80px;
+    top: 20px;
+    color: white;
+    text-shadow:  0px 0px 15px rgb(180, 180, 180);
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+
+ }
+ .sale{
+   position: relative;
+   top: 70px;
+   font-family: 'StretchPro';
+   font-size: 40px;
+   color: rgb(197, 8, 8);
+   text-shadow:  0px 0px 10px rgb(150, 0, 0);
+   transition: transform 0.5s ease;
+
+ }
+ .sale:hover{
+   transform: scale(1.1);
+ }
+.marquesa{
+   flex-direction: row;
+   justify-content: center;
+   justify-content: space-around;
+   width: auto;
+}
+.descricao{
+   border: 10px solid #1C1C1C;
+   border-radius: 30px;
+   height: 420px;
+   background-color: #1C1C1C;
+   transition: transform 0.5s ease;
+   box-shadow: 0px 0px 20px black;
+
+}
+.descricao:hover{
+   transform: scale(1.05);
+}
+.rodape{
+   position: relative;
+   top: 210px;
+   left:10px;
+   font-size: 15px;
+   font-family: 'L-BoldeagueSpartanr';
+}

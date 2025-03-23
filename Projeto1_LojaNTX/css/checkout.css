@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+header {
+    background-color: #2b365c;
+    color: aliceblue;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+    margin: 20px;
+    background: rgb(220, 231, 240);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+input, select {
+    margin: 10px 0;
+    padding: 10px;
+    width: 95%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background: blue;
+    color: whitesmoke;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.resumo-carrinho {
+    width: 35%;
+    background: rgb(233, 245, 247);
+    padding: 50px;
+    border-radius: 20px;
+    direction: ltr;
+    unicode-bidi: bidi-override;
+    box-sizing: content;
+    
+}
+
+.Cart-item {
+    display: flex;
+    align-items: center;
+}
+
+.Cart-item img {
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+.Total {
+    margin-top: 25px;
+}
+
+.carrinho {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: 100px;
+}
+
+.infCartao {
+    width: 600px;
+    
+}
+
+

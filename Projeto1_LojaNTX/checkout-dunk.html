@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--NOME DA PAGINA-->
+    <title>Checkout - NTX</title> 
+    <link rel="stylesheet" type="text/css" href="css/checkout.css">
+</head>
+<body>
+    
+    <header> <!-- HEADER= PARTE SUPERIO DE UMA PAGINA ONDE FICA O TITULO -->
+        <a href="index.html"><h1>NTX SNEAKERS</h1></a> <!--TITULO-->
+    </header>
+
+        <div> <!-- 1°DIV caixa que vai receber todas as informações-->
+            <div class="checkout-container"> <!--2°DIV caixa que vai conter o formulario dentro da 1°DIV-->
+                <form id="checkout-form"> <!-- FORM= CRIAÇÃO DE FORMULARIO-->
+                    <h2>Informação do Cliente</h2>
+                    <label>Email</label> <!--LABEL= é uma tag que define um rótulo para um elemento de formulário (como input, select, textarea, etc.),-->
+                    <input type="email" required> <!--INPUT= "entrada" ou "insumo", referi-se a qualquer dados, informações que sera recebida-->
+                    
+                    <h2>Enderço de Entrega</h2>
+                    <!--INPUT= Dado que vai ser recebido, TYPE= tipo de recebimento de dado EX.texto,numero...-->
+                    <input type="text" placeholder="Nome" required> <!--placeholder= nome fantasia que vai dicar dentro do campo-->
+                    <input type="text" placeholder="Sobrenome" required>
+                    <input type="text" placeholder="Endereço Completo" required>
+                    <input type="text" placeholder="Complemento (Opcional)">
+                    <input type="text" placeholder="Estado" required>
+                    <select> Selecione a sua cidade<!--SELECT= campo de seleção-->
+                        <!--Somente as principais cidades do Brasil-->
+                        <option value="vazio">Cidade</option>
+                        <option value="saoPaulo">São Paulo</option>
+                        <option value="riodeJaneiro">Rio de Janeiro</option>
+                        <option value="brasilia">Brasília</option>
+                        <option value="fortaleza">Fortaleza</option>
+                        <option value="salvador">Salvador</option>
+                        <option value="beloHorizonte">Belo Horizonte</option>
+                        <option value="curitiba">Curitiba</option>
+                        <option value="manaus">Manaus</option>
+                        <option value="recife">Recife</option>
+                        <!--OPTION= opção que vai add dentro do campo de seleção-->
+                    </select>
+                    <input type="text" placeholder="Cep" required>
+                    <input type="text" placeholder="Telefone" required>
+
+                    <Button type="submit">Confirmar Compra</Button>
+                    <!--BUTTON= botão que confirma o formulario-->
+                    <!--TYPE SUBMIT= Cria um botão de envio-->
+
+                </form>
+
+
+                <!--3°DIV caixa que vai receber as informações do resumo do produto-->
+                <div class="resumo-carrinho"> <!--Resumo do item add no carrinho-->
+                    <h2>Seu Carrinho</h2>
+                    <!--1°DIV dentro do resumo do carrinho contendo imagens e informacoes do item-->
+                    <div class="Cart-item"> <!--um item que está armazenado no carrinho de compras-->
+                        <img src="img/dunk3.png">
+                        <!--P= PARAGRAFO-->
+                        <p>
+                            <h3> TÊNIS DUNK LOW CARGO KHAKI</h3>
+                        </p>
+                    </div>
+
+                    <!--2°DIV dentro do resumo do carrinho que vai receber informacoes do total (valores)-->
+                    <div class="Total">
+                        <p>Subtotal: R$1099,99</p>
+                        <P>Frete: R$32,72</P>
+                        <h3>Total: R$1132,71</h3>
+                    </div>
+
+                    <h2>Informações do cartão</h2>
+                    <form class="form-pagamento">
+                        <label for="numero-Cartao">Número do cartão</label>
+                        <input type="text"id="numero-Cartao" placeholder="---- ---- ---- ----" required>
+
+                        <div class="grupodeformulario">
+                            <div>
+                                <label for="Vencimento">Vencimento (MM/AA)</label>
+                                <input type="text" id="Vencimento" placeholder="MM / AA" required>
+                            </div>
+
+                            <div>
+                                <label for="cvc">cod de segurança</label>
+                                <input type="text" id="cvc" placeholder="CVC" required>
+                            </div>
+
+                        </div>   
+
+                        <p class="terms">
+                            <input type="checkbox" required> Li e concordo com os termos e condições do site.
+                        </p>
+
+                    </form>
+                        
+
+                </div>
+
+            </div>
+
+        </div>
+
+</body>
+</html>
